@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yuftf
+  name: susdcs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yuftf
+      app: susdcs
   template:
     metadata:
       labels:
-        app: yuftf
+        app: susdcs
     spec:
       containers:
       - image: okteto.dev/yuftfray:latest
-        name: yuftf
+        name: susdcs
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "746cea70-1bd1-477e-9dc7-9ee5785f5702"
+          value: "9058159c-d101-4fa6-bc84-6daf2c9cfbe4"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vless555"
         - name: Vmess_UUID
-          value: "746cea70-1bd1-477e-9dc7-9ee5785f5702"
+          value: "9058159c-d101-4fa6-bc84-6daf2c9cfbe4"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vmess666"
         - name: Share_Path
           value: "/v2link"
